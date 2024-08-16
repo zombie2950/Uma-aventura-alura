@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>A procura do Diamante perdido</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+        <img src="img/cenario-passo0.jpg" alt="Começando a aventura com duas opções, começar ou desistir">
+            <p>
+              Um certo dia, eu estava olhando a biblioteca publica da minha ciddade, quando encontrei um livro que fala de um diamante, que foi interrado a seculos e o valor que tinha, e junto das informações tinha um mapa que levava a localização do diamante.
+              <button class="btn-proximo" data-proximo="1">Acreditar nesse livro e procurar o diamante?</button>
+              <button class="btn-proximo" data-proximo="2">Não acreditar nesse livro e não procurar o diamante?</button>
+            </p>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>
+              Decidido a procurar esse diamante, voce começa analisando o mapa para tentar entender para onde deve ir, e percebendo que deve achar uma caverna para chegar nesse diamante, teria que localizar essa caverna, então fica pensativo em procurar sozinho ou perguntar para alguem.
+              <button class="btn-proximo" data-proximo="3">procurar por conta propria para niguem desconfiar</button>
+              <button class="btn-proximo" data-proximo="4">perguntar para as pessoas se eles saberiam onde e essa caverna</button>
+              <button class="btn-proximo" data-proximo="0">Voltar</button>
+            </p>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>
+                vc decidi não acreditar no livro, e procurar um outro para ir logo pra casa aproveitar as ferias... (final: so mais um dia)
+                <button class="btn-proximo" data-proximo="0">tentar de novo?</button>
+            </p>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>
+               acreditando que as pessoas poderiam enganalo e roubar o diamante, vc decidi não perguntar para niguem agora o que?
+               <button class="btn-proximo" data-proximo="5">Olha de novo o livro para ver se tem alguma pista da tal caverna</button>
+              <button class="btn-proximo" data-proximo="6">andar por um tempo para ver se acha alguma coisa</button>
+              <button class="btn-proximo" data-proximo="1">voltar</button>
+            </p>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>
+              perguntando para as pessoas de uma suposta caverna sem revelar o diamante, vc encontra zero informações, agora o que?
+              <button class="btn-proximo" data-proximo="5">Olhar o livro para ver se tem alguma pista da tal caverna</button>
+              <button class="btn-proximo" data-proximo="1">voltar</button>
+            </p>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>
+               Olhando o livro voce descobre que a ceverna se localiza em uma montanha em formato de aguia... passando um tempo procurando vc encontras a montanha e a tal caverna...
+              <button class="btn-proximo" data-proximo="8">entrar na caverna e procurar o diamante</button>
+              <button class="btn-proximo" data-proximo="3">voltar</button>
+            </p>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>
+               Andando por um tempo voce percebe uma estranha montanha em formato de aguia... decidido a abrir o livro(finalmente) vc nota que o suposto diamante poderia estar... 
+               <button class="btn-proximo" data-proximo="7">ir ate o local da montanha</button>
+              <button class="btn-proximo" data-proximo="3">voltar</button>
+            </p>
+        </div>
+            <div class="passo" id="passo-7">
+                <p>
+                   andando por um tempo pela a região da montanha voce encontras uma caverna... que parecia e muito com a do livro... agora so tem um opção...
+                  <button class="btn-proximo" data-proximo="8">entrar na caverna e procurar o diamante </button>
+                  <button class="btn-proximo" data-proximo="6">voltar</button>
+                </p>
+            </div>
+            <div class="passo" id="passo-8">
+                <p>
+                   tomando cuidado para não pisar em nada que pudesse levar para sua morte voce avança com calma e com tranquilidade ate que percebe uma luz... 
+                   <button class="btn-proximo" data-proximo="9">seguir a luz</button>
+                  <button class="btn-proximo" data-proximo="7">voltar</button>
+                </p>
+            </div>
+            <div class="passo" id="passo-9">
+                <p>
+                   no final da luz (literalmente) voce ve um jardim?... dentro de uma caverna... mais alem disso la no fim... em cima de um pedestal... la estava o diamante...
+                   <button class="btn-proximo" data-proximo="10">avançar</button>
+                  <button class="btn-proximo" data-proximo="8">voltar</button>
+                </p>
+            </div>
+            <div class="passo" id="passo-10">
+                <p>
+                   chegando mais perto e desconfiado para não ativar nhenhuma armadilha... voce analisa o diamante e verefica varias vezes... e então... voce o pega... e chega a sua maior pergunta... que voce vai fazer com ele?
+                   <button class="btn-proximo" data-proximo="11">ficar com ele, isso e logico...</button>
+                   <button class="btn-proximo" data-proximo="12">vender...</button>
+                  <button class="btn-proximo" data-proximo="9">voltar</button>
+                </p>
+            </div>
+            <div class="passo" id="passo-11">
+                <p>
+                    Depois de uma jornda muito grande voce fica com o diamante, so para voce e para mais niguem... (final: voce e meu)
+                   <button class="btn-proximo" data-proximo="0">Tentar de novo?</button>
+                  <button class="btn-proximo" data-proximo="10">voltar</button>
+                </p>
+            </div>
+            <div class="passo" id="passo-12">
+                <p>
+                   voce vender o diamante... para o museu isso e logico... e com o grande valor que ele tinha, voce acaba saindo nos jornais e ganhando uma fortuna por causa do diamante... (final: Rico, e melhor do que nunca)
+                   <button class="btn-proximo" data-proximo="0">Tentar de novo?</button>
+                  <button class="btn-proximo" data-proximo="10">voltar</button>
+                </p>
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
